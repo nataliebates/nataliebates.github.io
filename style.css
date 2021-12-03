@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(67, 85, 37);
+}
+
+#button {
+  padding: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+}
