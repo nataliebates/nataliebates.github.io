@@ -1,4 +1,5 @@
 let degreeInfo = document.getElementById('degreeInfo');
+let degreeInfoDiv = document.getElementById('degreeInfoDiv');
 
 let button = document.getElementById("button");
 button.addEventListener("click", getDegrees);
@@ -8,9 +9,9 @@ async function getDegrees() {
     .then(response => response.json())
     .then(data => {
       console.log(data);
-      button.style.display = "none";
       degreeInfo.innerHTML = parseData(data);
-      degreeInfo.style.display = "block";
+      button.style.display = "none";
+      degreeInfoDiv.style.display = "inline-block";
     })
     .catch(error => {
       console.error('Error:', error);
@@ -28,10 +29,10 @@ function parseData(data) {
   let textToDisplay = "";
 
   degrees.forEach(degree => {
-    let degreeText = `<br>School: ${degree['school']}` +
+    let degreeText = `School: ${degree['school']}` +
                      `<br>Program: ${degree['program']}` +
                      `<br>Degree Type: ${degree['degreeType']}` +
-                     `<br>Graduation Year: ${degree['graduationYear']}`;
+                     `<br>Graduation Year: ${degree['graduationYear']}<br>`;
     textToDisplay += degreeText;
   });
 
