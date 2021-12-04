@@ -6,7 +6,8 @@ button.addEventListener("click", getDegrees);
 async function getDegrees() {
   await fetch("./src/degrees.json")
     .then(response => response.json())
-    .then((data) =>
+    .then(data =>
+      console.log(data),
       button.style.display = "none",
       degreeInfo.innerHTML = parseData(data),
       degreeInfo.style.display = "block"
