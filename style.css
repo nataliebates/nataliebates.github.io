@@ -39,10 +39,10 @@ body {
 }
 
 #degreeInfo, #degreeInfoHeader {
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 #degreeInfoHeader {
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
