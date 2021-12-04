@@ -38,6 +38,11 @@ body {
   border-radius: 5px;
 }
 
+#degreeInfo, #degreeInfoHeader {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 #degreeInfoHeader {
-  margin-top: 3rem;
+  padding-top: 5rem;
 }
