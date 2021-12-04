@@ -46,3 +46,7 @@ body {
 #degreeInfoHeader {
   padding-top: 2rem;
 }
+
+#degreeInfo {
+  padding-bottom: 2rem;
+}
