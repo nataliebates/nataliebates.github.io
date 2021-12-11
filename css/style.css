@@ -1,0 +1,302 @@
+:root {
+  /* Main colors */
+  --link: #DCA8AA;
+  --link-highlight: #E8C5C6;
+  --background: #190F1A;
+  --card-color: #1e3233e0;
+  --nav-bar: #321E34;
+  --nav-bar-highlight: #3F2541;
+  --main-text: #C2B5AC;
+  --secondary-text: #B9D39C;
+  --button: #CB7C80;
+  --button-hover: #D6999C;
+  --button-active: #E2B6B8;
+}
+
+/* Imported fonts */
+@font-face {
+  font-family: "Rosario";
+  src: url("../fonts/Rosario/Rosario-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Yantramanav";
+  src: url("../fonts/Yantramanav/Yantramanav-Regular.ttf")
+}
+
+@font-face {
+  font-family: "Yantramanav-Thin";
+  src: url("../fonts/Yantramanav/Yantramanav-Thin.ttf")
+}
+
+/* General component styling */
+body {
+  background-color: var(--background);
+  font-family:'Yantramanav', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--link);
+  font-family: 'Yantramanav-Thin';
+}
+
+h2, h3, h4 {
+  color: var(--secondary-text);
+}
+
+h2 {
+  letter-spacing: 0.2rem;
+  font-family: 'Rosario';
+}
+
+h4 {
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-highlight);
+}
+
+p, label.text, table {
+  font-size: 1.1rem;
+  color:var(--main-text);
+}
+
+main {
+  padding: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+}
+
+footer {
+  font-size: 0.75rem;
+  color: var(--link);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.card {
+  background-color: var(--card-color);
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 5px;
+}
+
+.button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--background);
+  background-color: var(--button);
+  border: none;
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+}
+
+.button:active {
+  background-color: var(--button-active);
+}
+
+/* Home page styling */
+#home-header {
+  background-color: var(--nav-bar);
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+}
+
+#home-body {
+  background-image: url('../images/last_week_at_ualbany.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home-content {
+  display: inline-block;
+}
+
+/* Main menu / navigation styling */
+header {
+  margin: -0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+nav {
+  background-color: var(--nav-bar);
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.mainMenu {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 1rem;
+  padding-left: 0rem;
+  margin: 0;
+  align-items: center;
+}
+
+.mainMenuItem {
+  display: inline;
+}
+
+.mainMenuItem a {
+  font-size: 1rem;
+  padding: 1.5rem;
+}
+
+.mainMenuItem a:hover {
+  background-color: var(--nav-bar-highlight);
+  color: var(--link-highlight);
+}
+
+/* About page styling */
+#about-image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
+
+#about-card {
+  text-align: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  display: inline;
+  text-align: left;
+}
+
+th {
+  padding-right: 3rem;
+}
+
+audio {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3rem;
+  width: 60%;
+}
+
+/* Creative Projects page styling */
+iframe {
+  border: 1rem solid var(--nav-bar);
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.gallery {
+  width: 33%;
+  height: auto;
+}
+
+#village-symphony-video {
+  width: 600px;
+  height: 338px;
+}
+
+
+/* Resume page styling */
+#resume {
+  width: 54rem;
+  height: 72rem;
+}
+
+/* Contact page styling */
+#contactPage {
+  display: flex;
+}
+
+#contactPageText {
+  padding-right: 2rem;
+}
+
+#contactFormDiv {
+  margin-left: auto;
+  text-align: center;
+}
+
+#submissionMessage {
+  display: none;
+}
+
+#contactForm {
+  display: inline-block;
+  text-align: right;
+}
+
+#contactFormErrorMessage {
+  color: rgb(245, 78, 78);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Quiz page styling */
+#quiz-main {
+  text-align: center;
+}
+
+#quiz-card {
+  min-width: 15rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quiz-question {
+  font-style: italic;
+}
+
+/* Adjustments for small screen sizes */
+@media (max-width: 500px) {
+
+  /* Allow menu items to stack */
+  .mainMenuItem {
+    display: flex;
+  }
+
+  /* Increase some text size */
+  .mainMenuItem a, p {
+    font-size: 1.3rem;
+  }
+
+  /* Allow most media to essentially fill the smaller screen */
+  img, .gallery, #village-symphony-video, #about-image {
+    width: 92%;
+  }
+
+}
