@@ -346,8 +346,7 @@ textarea {
 }
 
 #next-question, #quiz-reveal {
-  position: absolute;
-  bottom: 3rem;
+  vertical-align: bottom;
 }
 
 /* Adjustments for small screen sizes */
