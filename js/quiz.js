@@ -16,6 +16,7 @@ async function getQuizData() {
       quizData = data.quiz;
 
       startButton.style.display = "none";
+      quizCard.style.display = "block";
       displayNextQuestion();
     })
     .catch(error => {
@@ -56,6 +57,7 @@ let displayNextQuestion = () => {
 
 
 // Get elements that will need to be manipulated
+let quizCard = document.getElementById("quiz-card");
 let startButton = document.getElementById("start-quiz-button");
 let quizQuestion = document.getElementById("quiz-question");
 let quizAnswer = document.getElementById("quiz-answer");
