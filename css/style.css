@@ -345,10 +345,6 @@ textarea {
   font-style: italic;
 }
 
-#next-question, #quiz-reveal {
-  vertical-align: bottom;
-}
-
 /* Adjustments for small screen sizes */
 @media screen and (max-width: 500px) {
 
